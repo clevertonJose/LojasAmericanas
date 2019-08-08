@@ -10,7 +10,7 @@ public class Fornecedor {
 		private String telefone;
 		private String ramo;
 		private String cnpj;
-		private List<Produto> produto;
+		private List<Produto> produtos;
 		private String nomeRepresentante;
 		
 		public int getCodigo() {
@@ -62,11 +62,11 @@ public class Fornecedor {
 		}
 		
 		public List<Produto> getProduto() {
-			return produto;
+			return produtos;
 		}
 		
-		public void setProduto(List<Produto> produto) {
-			this.produto = produto;
+		public void setProduto(List<Produto> produtos) {
+			this.produtos = produtos;
 		}
 		
 		public String getNomeRepresentante() {
