@@ -1,10 +1,12 @@
 package modelo;
 
+import java.util.List;
+
 public class Produto {
 	private int codigo;
 	private String nome;
 	private String tipo;
-	private Fornecedor fornecedor;
+	private List <Fornecedor> fornecedores;
 	private int quantidade;
 	private String especificacoesTecnicas;
 	private double preco;
@@ -33,14 +35,6 @@ public class Produto {
 		this.tipo = tipo;
 	}
 	
-	public Fornecedor getFornecedor() {
-		return fornecedor;
-	}
-	
-	public void setFornecedor(Fornecedor fornecedor) {
-		this.fornecedor = fornecedor;
-	}
-	
 	public int getQuantidade() {
 		return quantidade;
 	}
@@ -63,6 +57,14 @@ public class Produto {
 	
 	public void setPreco(double preco) {
 		this.preco = preco;
+	}
+
+	public List<Fornecedor> getFornecedores() {
+		return fornecedores;
+	}
+
+	public void setFornecedores(List<Fornecedor> fornecedores) {
+		this.fornecedores = fornecedores;
 	}
 	
 	
